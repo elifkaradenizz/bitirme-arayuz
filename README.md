@@ -1,30 +1,28 @@
 # Müşteri Segmentasyonu Arayüzü
 
-Bu arayüz, müşteri segmentasyonu ve öneri sistemi projesine görsel bir panel üzerinden erişim sağlamak amacıyla geliştirilmiştir. Python diliyle yazılan bu uygulama, veri temizleme, özellik mühendisliği, modelleme ve performans analizi gibi adımları modüler olarak sunar.
+Bu arayüz, 2024 yılı lisans bitirme projem kapsamında geliştirilen Müşteri Segmentasyonu ve Öneri Sistemi çalışmasının görsel ve etkileşimli bir uzantısıdır.
+Python programlama dili ve Streamlit kütüphanesi kullanılarak geliştirilen bu uygulama, kullanıcıya veri ön işleme, modelleme ve sonuç analizlerini kolayca gerçekleştirme imkânı sunar.
 
-## 🚀 Özellikler
+## Özellikler ve Dosya Yapısı
 
-- CSV formatındaki müşteri verileri indirildikten sonra arayüz üzerinden sunulabilir
-- Veri temizleme ve ön işleme
-- Özellik mühendisliği
-- Kümeleme algoritmaları ile segmentasyon
-- Aykırı değer tespiti
-- Model performans analizleri
+CSV formatındaki müşteri verileri indirildikten sonra bu arayüz üzerinden işlenip analiz edilebilir. Bazı analizlerde sistemden doğrudan veri çekilemediği durumlarda, analiz sonuçlarını desteklemek amacıyla ilgili görseller (örneğin .png formatında) manuel olarak yüklenmiştir.
 
-## 📁 Dosya Yapısı
-
-- `anasayfa.py`: Uygulamanın giriş noktası
-- `data_cleaning.py`: Eksik veri temizleme ve ön işleme adımları
+Uygulamanın temel modülleri şunlardır:
+- `anasayfa.py`:Ana çalışma ekranı ve yönlendirme arayüzü
+- `data_cleaning.py`, `dp_end.py`:: Eksik veri temizleme ve ön işleme adımları
 - `feature_engineering.py`: Özellik oluşturma ve dönüştürme işlemleri
-- `modelling.py`: Kümeleme ve öneri sistemi modelleri
+- `modelling.py`: Kümeleme algoritmaları ve öneri sistemi
 - `performance.py`: Model başarımları ve analizler
-- `dp_end.py`, `deneme.py`: Alternatif veya test amaçlı modüller
 
-## 📌 Açıklama
+## Veri Kullanımı
+Kullanıcılar arayüz üzerinden:
 
-CSV formatında indirilen e-ticaret verileri, bu arayüz üzerinden işlenmiş ve kullanıcıya analiz sonuçları sunulmuştur.  
-Bu sürecin nasıl tasarlandığı ve kullanılan makine öğrenmesi tekniklerine dair detaylar, 2024 yılı bitirme projemde kapsamlı şekilde ele alınmıştır.
+Kendi CSV dosyalarını yükleyebilir,
+Sistem içinde hazır bulunan görsellerden yararlanabilir,
+Tüm analiz adımlarını adım adım takip edebilir.
 
-👉 **Bitirme projesinin detayları için:**  
+## Detaylı Açıklama
+Bu arayüz, e-ticaret veri setlerinin işlenmesi ve anlamlı segmentlerin oluşturulması için tasarlanmıştır. Aynı zamanda öneri sistemiyle kullanıcıya özel içerikler sunulmasına olanak tanır.
+
+👉 **Bu sürecin nasıl tasarlandığı ve kullanılan yöntemlerin detayları için:**  
 [Proje Readme’sine Git](https://github.com/elifkaradenizz/bitirme_projesi_ymu_2024)  
-*(Not: Bu bağlantıyı GitHub'da iki proje aynı repoda değilse tam URL ile güncelleyebilirsin.)*
