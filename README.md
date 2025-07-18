@@ -25,4 +25,4 @@ Tüm analiz adımlarını adım adım takip edebilir.
 Bu arayüz, e-ticaret veri setlerinin işlenmesi ve anlamlı segmentlerin oluşturulması için tasarlanmıştır. Aynı zamanda öneri sistemiyle kullanıcıya özel içerikler sunulmasına olanak tanır.
 
 👉 **Bu sürecin nasıl tasarlandığı ve kullanılan yöntemlerin detayları için:**  
-[Proje Readme’sine Git](https://github.com/elifkaradenizz/bitirme_projesi_ymu_2024)  
+[Proje Reposuna Git](https://github.com/elifkaradenizz/bitirme_projesi_ymu_2024)  
