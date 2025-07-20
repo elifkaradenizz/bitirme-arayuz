@@ -21,6 +21,27 @@ Kendi CSV dosyalarını yükleyebilir,
 Sistem içinde hazır bulunan görsellerden yararlanabilir,
 Tüm analiz adımlarını adım adım takip edebilir.
 
+### 📷 Ekran Görüntüsü: Dosya Yükleme ve Küme Dağılımı
+
+![Küme Dağılımı ve Dosya Yükleme Arayüzü](cluster_distribution.png)
+
+---
+
+## Kümeleme Sonuçları ve Performans
+
+Bu proje kapsamında uygulanan kümeleme algoritmalarının görsel çıktıları ve başarı metrikleri aşağıda yer almaktadır:
+
+### 📷 Ekran Görüntüsü: Kümeleme Dağılımı ve Metrikler
+
+![Kümeleme Sonuç Grafiği ve Performans Metrikleri](performance.png)
+
+**Kullanılan metrikler:**
+- Silhouette Score
+- Calinski-Harabasz Score
+- Davies-Bouldin Score
+
+---
+
 ## Detaylı Açıklama
 Bu arayüz, e-ticaret veri setlerinin işlenmesi ve anlamlı segmentlerin oluşturulması için tasarlanmıştır. Aynı zamanda öneri sistemiyle kullanıcıya özel içerikler sunulmasına olanak tanır.
 
