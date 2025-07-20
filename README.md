@@ -29,16 +29,28 @@ Tüm analiz adımlarını adım adım takip edebilir.
 
 ## Kümeleme Sonuçları ve Performans
 
-Bu proje kapsamında uygulanan kümeleme algoritmalarının görsel çıktıları ve başarı metrikleri aşağıda yer almaktadır:
-
-### 📷 Ekran Görüntüsü: Kümeleme Dağılımı ve Metrikler
+Bu proje kapsamında uygulanan **K-Means kümeleme algoritması**, farklı algoritmalarla yapılan karşılaştırmalar sonucunda en başarılı sonuçları vermiştir. Aşağıda, bu algoritmanın çıktılarına ait görsel ve değerlendirme metrikleri yer almaktadır:
 
 ![Kümeleme Sonuç Grafiği ve Performans Metrikleri](performance.png)
 
-**Kullanılan metrikler:**
-- Silhouette Score
-- Calinski-Harabasz Score
-- Davies-Bouldin Score
+**🔍 Görsel Yorum:**  
+Yukarıdaki grafik, verilerin **t-SNE** yöntemiyle iki boyuta indirgenerek görselleştirilmiş halini göstermektedir. Genel olarak kümeler birbirinden net şekilde ayrışmaktadır.  
+Ancak bazı noktaların birbirine yakınlaştığı, hatta kısmen örtüştüğü görülebilir. Bu durum, **veri doğasında benzer özelliklere sahip müşteri gruplarının bulunmasından** veya **boyut indirgeme sırasında bazı ilişkilerin görselde farklı yansıtılmasından** kaynaklanabilir.  
+
+Bu tür küçük örtüşmeler, gerçek dünyadaki karmaşık verilerin doğasında vardır ve **kümeleme başarısını olumsuz etkilemez**. Özellikle bu projede kullanılan metrikler, segmentasyonun başarılı ve anlamlı olduğunu göstermektedir.
+
+---
+
+### 📈 Değerlendirme Metrikleri
+
+| Metrik                   | Değer       | Açıklama |
+|--------------------------|-------------|----------|
+| **Silhouette Score**     | `0.6657`     | Küme içi tutarlılık ve kümeler arası ayrım gücünü ölçer. 0.6 üzeri değerler başarılı segmentasyonu gösterir. |
+| **Calinski-Harabasz**    | `2188.4509`  | Küme yoğunluğu ve ayrışma ölçütüdür. Yüksek değer daha iyi ayrımı temsil eder. |
+| **Davies-Bouldin Score** | `0.4420`     | Küme benzerliğini ölçer. Düşük değer, iyi ayrışmış kümeleri ifade eder. |
+
+Bu sonuçlar, K-Means algoritmasının proje verisi üzerinde yüksek doğrulukla çalıştığını ve kullanıcı segmentlerini etkili şekilde oluşturduğunu ortaya koymaktadır.
+
 
 ---
 
